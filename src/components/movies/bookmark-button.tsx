@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import { useBookmarkStore } from "../../stores/bookmark-store";
 import { cn } from "../../utils/cn";
 
@@ -23,7 +26,10 @@ export function BookmarkButton({ movieId, className }: BookmarkButtonProps) {
         className,
       )}
     >
-      <img
+      <Image
+        width={24}
+        height={24}
+        unoptimized
         src={
           isBookmarked
             ? "/icons/movie-icons/bookmark.svg"

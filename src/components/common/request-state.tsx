@@ -1,3 +1,5 @@
+"use client";
+
 interface RequestStateProps {
   isLoading: boolean;
   errorMessage: string | null;
