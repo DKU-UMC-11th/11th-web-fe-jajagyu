@@ -46,7 +46,7 @@ export function MovieListPage() {
   return (
     <main className="px-10 pb-10">
       <div className="mb-5 flex items-center justify-between">
-        <h2 className="text-xl font-semibold">인기 영화</h2>
+        <h2 className="text-xl font-semibold">지금 인기 있는 영화</h2>
         <div className="flex gap-2">
           {CARD_SIZE_OPTIONS.map((option) => (
             <button
